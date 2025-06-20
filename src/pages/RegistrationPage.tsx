@@ -77,9 +77,7 @@ const RegistrationPage: React.FC = () => {
               <AlertTitle>Registration Error</AlertTitle>
               <AlertDescription>{error}</AlertDescription>
             </Alert>
-          )}
-          <form onSubmit={handleSubmit} className="space-y-5">
-            <div>
+          )}\n          <form onSubmit={handleSubmit} className="space-y-5">\n            <div>
               <Label htmlFor="fullName">Full Name</Label>
               <Input
                 id="fullName"
@@ -150,7 +148,7 @@ const RegistrationPage: React.FC = () => {
             Already have an account?{' '}
             <Link
               to="/" // Path to LoginPage from App.tsx
-              className="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
+              className="font-medium text-primary hover:underline" // Updated to use primary theme color
             >
               Log in
             </Link>
