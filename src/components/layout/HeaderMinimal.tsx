@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck } from 'lucide-react'; // Example icon
+import ThemeToggle from '../ThemeToggle'; // Adjusted path if ThemeToggle is directly in components/
 
 const HeaderMinimal: React.FC = () => {
   console.log('HeaderMinimal loaded');
@@ -12,7 +13,7 @@ const HeaderMinimal: React.FC = () => {
           <ShieldCheck className="h-6 w-6" />
           <span>AuthApp</span>
         </Link>
-        {/* Minimal header: No navigation links usually needed on auth pages */}
+        <ThemeToggle /> {/* Add the theme toggle button */}
       </div>
     </header>
   );
